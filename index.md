@@ -4,7 +4,7 @@ Project 1 Repository
 
 ## The Team
 1. Kevin Torres: Commander and the Leader
-2. 	Sergio Ponce: The Charm and the Laughter
+2. 	Sergio Ponce: The Joy and the Laughter
 3. Jacob Finley Crawford: The Toughest Fighter
 ## Sketch
 

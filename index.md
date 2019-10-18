@@ -1,12 +1,14 @@
 # Team 21: Team KaibaCorp
 Project 1 Repository
-
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/KCLogo.jpg)
 
 ## The Team
 1. Kevin Torres: Commander and the Leader
 2. 	Sergio Ponce: The Joy and the Laughter
 3. Jacob Finley Crawford: The Toughest Fighter
 ## Sketch
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch1.png)
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch2.png)
 
 You can use the [editor on GitHub](https://github.com/SapphireLion/p1.21/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 

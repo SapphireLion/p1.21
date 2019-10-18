@@ -1,4 +1,12 @@
-## Welcome to GitHub Pages
+# Team 21: Team KaibaCorp
+Project 1 Repository
+
+
+## The Team
+1. Kevin Torres: Commander and the Leader
+2. 	Sergio Ponce: The Charm and the Laughter
+3. Jacob Finley Crawford: The Toughest Fighter
+## Sketch
 
 You can use the [editor on GitHub](https://github.com/SapphireLion/p1.21/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 

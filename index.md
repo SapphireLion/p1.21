@@ -1,15 +1,15 @@
 ## The Team
-![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/assets/img/GroupPhoto.JPG)
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/GroupPhoto.JPG)
 1. Kevin Torres: Commander and the Leader
 2. Sergio Ponce: The Joy and the Laughter
 3. Jacob Finley Crawford: The Toughest Fighter
 
 ## Sketch
 ### Before
-![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/assets/img/sketch2.png)
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch2.png)
 
 ### After
-![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/assets/img/sketch1.png)
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch1.png)
 
 
 You can use the [editor on GitHub](https://github.com/SapphireLion/p1.21/edit/master/index.md) to maintain and preview the content for your website in Markdown files.

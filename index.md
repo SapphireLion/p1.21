@@ -1,8 +1,3 @@
-# Team 21: Team KaibaCorp
-Project 1 Repository
-
-![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/KCLogo.jpg)
-
 ## The Team
 ![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/GroupPhoto.JPG)
 1. Kevin Torres: Commander and the Leader

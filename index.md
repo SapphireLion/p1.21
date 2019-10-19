@@ -4,7 +4,7 @@
 Music API, Twitter API, Login API
 ### 2. Sergio Ponce: The Joy and the Laughter
 Clock API, Weather API, Health API
-#### 3. Jacob Finley Crawford: The Toughest Fighter
+### 3. Jacob Finley Crawford: The Toughest Fighter
 Mirror Design, Wi-Fi API, Text API
 ## Sketch 1
 ### Before

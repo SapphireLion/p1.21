@@ -1,5 +1,6 @@
 ## The Team
 ![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/GroupPhoto.JPG)
+
 ### 1. Kevin Torres: Commander and the Leader
 Music API, Twitter API, Login API
 ### 2. Sergio Ponce: The Joy and the Laughter

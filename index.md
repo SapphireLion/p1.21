@@ -4,12 +4,15 @@
 2. Sergio Ponce: The Joy and the Laughter
 3. Jacob Finley Crawford: The Toughest Fighter
 
-## Sketch
+## Sketch 1
 ### Before
 ![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch2.png)
 
 ### After
 ![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch1.png)
+
+## Sketch 2
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch3.jpg)
 
 
 You can use the [editor on GitHub](https://github.com/SapphireLion/p1.21/edit/master/index.md) to maintain and preview the content for your website in Markdown files.

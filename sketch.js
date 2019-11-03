@@ -1,4 +1,5 @@
 var myCanv,myDiv,myButton,myAss1,myAss2,myAss3,myAss4,myAss5,googleDIv;
+var spotifyPlaylist, calendar, capture;
 let newsTitles=[];
 let newsURLs=[];
 let playlistPlayer;
@@ -26,13 +27,30 @@ function gotData(data)
 
 function setup() {
 
-    myCanv=createCanvas(1000, 500);
+    myCanv=createCanvas(1200, 650);
     myCanv.position(0,0);
+    capture = createCapture();
+    capture.size(600, 325);
+    capture.hide();
+
+    spotifyPlaylist = createDiv();
+    spotifyPlaylist.position(0,550);
+    spotifyPlaylist.html('<iframe src="https://open.spotify.com/embed/playlist/0JkqL0FpWfJYOPBlAnNsvI" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>');
+    calendar = createDiv();
+    calendar.position(0, 0);
+    calendar.html('<iframe src="https://calendar.google.com/calendar/embed?src=yellowtroll77%40gmail.com&ctz=America%2FChicago" style="border: 0" width="300" height="300" frameborder="0" scrolling="no"></iframe>');
 }
 
 function draw() {
     background(100,200,255);
 
+    //camera stuff
+    translate(width, 0);
+    scale(-1.0, 1.0);
+    image(capture, 0, 0, width, height);
+    translate(width, 0);
+    scale(-1.0, 1.0);
+    
 if (myNews){
     var baseX=50;
    for (var i =0; i<5;i++){

@@ -54,7 +54,7 @@ function setup() {
     spotifyPlaylist.html('<iframe src="https://open.spotify.com/embed/playlist/0JkqL0FpWfJYOPBlAnNsvI" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>');
     calendar = createDiv();
     calendar.position(0, 0);
-    calendar.html('<iframe src="https://calendar.google.com/calendar/embed?src=yellowtroll77%40gmail.com&ctz=America%2FChicago" style="border: 0" width="300" height="300" frameborder="0" scrolling="no"></iframe>');
+    calendar.html('<iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=eWVsbG93dHJvbGw3N0BnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showNav=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showTz=0" style="border-width:0" width="380" height="300" frameborder="0" scrolling="no"></iframe>');
     spotifyPlaylist.hide();
     calendar.hide();
 }

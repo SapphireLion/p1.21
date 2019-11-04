@@ -1,6 +1,5 @@
 var weatherdat;
 var tempData;
-var weatherCond;
 var Degrees;
 var img;
 var IconURLstrt = 'http://openweathermap.org/img/wn/';
@@ -13,7 +12,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(150, 150);
   IconURLID = weatherdat.weather[0].icon;
   IconURL = IconURLstrt + IconURLID + IconURLend;
   img = loadImage(IconURL);
@@ -25,14 +24,14 @@ function draw() {
 background(200);
 image(img, 0, 0);
 tempData= round(weatherdat.main.temp);
-weatherCond= weatherdat.weather[0].description;
 Degrees = tempData + '°';
 IconURLID = weatherdat.weather[0].icon;
 IconURL = IconURLstrt + IconURLID + IconURLend;
-textSize(24);
-text(weatherCond, 22, 20);
-textSize(14);
-text(Degrees, 6, 55);
+textSize(16);
+textAlign(CENTER);
+textStyle(BOLD);
+fill(150, 150, 150);
+text(Degrees, 52, 55);
 noLoop();
 }
 

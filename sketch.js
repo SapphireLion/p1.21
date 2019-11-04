@@ -1,7 +1,9 @@
-var myCanv,myDiv,myButton,myAss1,myAss2,myAss3,myAss4,myAss5,googleDIv;
+var myCanv,myDiv,myAss1,myAss2,myAss3,myAss4,myAss5;
 var spotifyPlaylist, calendar, capture;
 let newsTitles=[];
 let newsURLs=[];
+var healthX=350;
+var healthY=555;
 
 var myNews;
 var startedApp;
@@ -54,8 +56,8 @@ function setup() {
     spotifyPlaylist.html('<iframe src="https://open.spotify.com/embed/playlist/0JkqL0FpWfJYOPBlAnNsvI" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>');
     calendar = createDiv();
     calendar.position(0, 0);
-    calendar.html('<iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=eWVsbG93dHJvbGw3N0BnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showNav=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showTz=0" style="border-width:0" width="380" height="300" frameborder="0" scrolling="no"></iframe>');
-    spotifyPlaylist.hide();
+
+    calendar.html('<iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=eWVsbG93dHJvbGw3N0BnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showNav=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showTz=0" style="border-width:0" width="380" height="300" frameborder="0" scrolling="no"></iframe>');    spotifyPlaylist.hide();
     calendar.hide();
 }
 
@@ -72,10 +74,12 @@ if(bleh == true)
       
       spotifyPlaylist.show();
       calendar.show();
+
+
       fill(255,0,0);
-      sq2 = square(1100,450,60,20);
+      sq2 = square(healthX,555,60,20);
       fill(51);
-      text("Health",1100,485);
+      text("Health",healthX,590);
       textFont("georgia");
       h = hour();
       m = minute();
@@ -121,76 +125,76 @@ if(bleh == true)
     }
     if(health == true)
     {
-      sq3 = square(1000,400,195);
+      sq3 = square(healthX-10,400,195);
       fill(255,255,255);
-      text("X",1000,412);
-      text("Calories Eaten Today: 2850",1000,430);
-      text("Steps walked Today: 5,285",1000,445);
-      text("sleep last night: 6 hours",1000,460);
-      text("Weekly Calories: 20,500",1000,530);
-      text("Weekly Steps: 37,836",1000,545);
-      text("Weekly Sleep: 41 hours",1000,560);
+      text("X",healthX-10,412);
+      text("Calories Eaten Today: 2850",healthX-10,430);
+      text("Steps walked Today: 5,285",healthX-10,445);
+      text("sleep last night: 6 hours",healthX-10,460);
+      text("Weekly Calories: 20,500",healthX-10,530);
+      text("Weekly Steps: 37,836",healthX-10,545);
+      text("Weekly Sleep: 41 hours",healthX-10,560);
     }
     if(health == false)
     {
       sq3 = square(0,0,0);
     }
-    
-    if (myNews){
-        var baseX=50;
-       for (var i =0; i<5;i++){
-           newsTitles[i]=myNews.articles[i].title;
-           newsURLs[i]=myNews.articles[i].url;
-       }
-       myAss1 = createA(newsURLs[0],newsTitles[0]);
-       myAss1.position(0,400);
-       myAss1.size(250,100);
+
+        if (myNews){
+            var baseX=1000;
+            var baseY=100;
+            for (var i =0; i<5;i++){
+                newsTitles[i]=myNews.articles[i].title;
+                newsURLs[i]=myNews.articles[i].url;
+            }
+            myAss1 = createElement('a',newsTitles[0]);
+            myAss1.position(baseX,baseY);
+            myAss1.size(200,100);
+            myAss1.attribute('href',newsURLs[0]);
 
 
-       myAss2 = createElement('a',newsTitles[1]);
-       myAss2.position(200,400);
-       myAss2.size(200,100);
-       myAss2.attribute('href',newsURLs[1]);
-
-
-
-       myAss3 = createElement('a',newsTitles[2]);
-       myAss3.attribute('href',newsURLs[2]);
-       myAss3.position(400,400);
-       myAss3.size(200,100);
-
-
-       myAss4 = createElement('a',newsTitles[3]);
-       myAss4.attribute('href',newsURLs[3]);
-       myAss4.position(600,400);
-       myAss4.size(200,100);
-
-
-        myAss5 = createElement('a',newsTitles[4]);
-        myAss5.attribute('href',newsURLs[4]);
-        myAss5.position(800,400);
-        myAss5.size(200,100);
-
-        textSize(20);
-        text('News',0,365,200,450);
-        fill(255);
-        text('Playlist',675,130,1000,152);
-    }
+            myAss2 = createElement('a',newsTitles[1]);
+            myAss2.position(baseX,baseY*2);
+            myAss2.size(200,100);
+            myAss2.attribute('href',newsURLs[1]);
 
 
 
-myDiv=createDiv();
-myDiv.size(320,195);
-myDiv.position(680,152);
-myDiv.id('YTDiv');
-myDiv.attribute('src','https://www.youtube.com/iframe_api');
-playlistPlayer = new YT.Player('YTDiv',{
-    width: '320',
-    height: '195',
-    events: {
-'onReady': onPlayerReady
-    }
-});
+            myAss3 = createElement('a',newsTitles[2]);
+            myAss3.attribute('href',newsURLs[2]);
+            myAss3.position(baseX,baseY*3);
+            myAss3.size(200,100);
+
+
+            myAss4 = createElement('a',newsTitles[3]);
+            myAss4.attribute('href',newsURLs[3]);
+            myAss4.position(baseX,baseY*4);
+            myAss4.size(200,100);
+
+
+            myAss5 = createElement('a',newsTitles[4]);
+            myAss5.attribute('href',newsURLs[4]);
+            myAss5.position(baseX,baseY*5);
+            myAss5.size(200,100);
+
+            textSize(20);
+            text('News',0,365,200,450);
+            fill(255);
+            text('Playlist',675,130,1000,152);
+        }
+
+
+
+        myDiv=createDiv();
+        myDiv.size(320,195);
+        myDiv.position(0,300);
+        myDiv.attribute('src','https://www.youtube.com/iframe_api');
+        myDiv.id('YTDiv');
+        playlistPlayer = new YT.Player('YTDiv',{
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
     }
 }
 
@@ -227,14 +231,14 @@ function stop()
 }
 function mousePressed()
 {
-  if(mouseX>1050 && mouseX<1150 && mouseY>390 && mouseY<510)
+  if(mouseX>350 && mouseX<420 && mouseY>555 && mouseY<675)
   {
     if(health == false)
     {
       health = true;
     }
   }
-  if (mouseX>950 && mouseX<1050 && mouseY>400 && mouseY<430)
+  if (mouseX>350 && mouseX<420 && mouseY>555 && mouseY<675)
     {
       health = false;
     }

@@ -5,6 +5,16 @@ let newsURLs=[];
 var healthX=350;
 var healthY=555;
 
+var weatherdat;
+var tempData;
+var Degrees;
+var img;
+var IconURLstrt = 'http://openweathermap.org/img/wn/';
+var IconURLend = '@2x.png';
+var IconURLID = '01d';
+var IconURL;
+
+var newsData;
 var myNews;
 var startedApp;
 let loginButton;
@@ -28,6 +38,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 function preload()
 {
     loadJSON(newsURL,gotData);
+    weatherdat = loadJSON('http://api.openweathermap.org/data/2.5/weather?q=lubbock&units=imperial&APPID=461042a064362a0e8faa93b05482d204');
 }
 
 function gotData(data)
@@ -59,6 +70,12 @@ function setup() {
 
     calendar.html('<iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=eWVsbG93dHJvbGw3N0BnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showNav=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showTz=0" style="border-width:0" width="380" height="300" frameborder="0" scrolling="no"></iframe>');    spotifyPlaylist.hide();
     calendar.hide();
+
+    IconURLID = weatherdat.weather[0].icon;
+    IconURL = IconURLstrt + IconURLID + IconURLend;
+    img = loadImage(IconURL);
+    setInterval(updateweather, 40000);
+    setInterval(draw, 200);
 }
 
 function draw() {
@@ -77,7 +94,7 @@ if(bleh == true)
 
 
       fill(255,0,0);
-      sq2 = square(healthX,555,60,20);
+      sq2 = square(healthX-30,555,60,20);
       fill(51);
       text("Health",healthX,590);
       textFont("georgia");
@@ -180,7 +197,6 @@ if(bleh == true)
             textSize(20);
             text('News',0,365,200,450);
             fill(255);
-            text('Playlist',675,130,1000,152);
         }
 
 
@@ -195,6 +211,18 @@ if(bleh == true)
                 'onReady': onPlayerReady
             }
         });
+
+        image(img, 1075, 0);
+        tempData= round(weatherdat.main.temp);
+        Degrees = tempData + '°';
+        IconURLID = weatherdat.weather[0].icon;
+        IconURL = IconURLstrt + IconURLID + IconURLend;
+        textSize(16);
+        textAlign(CENTER);
+        textStyle(BOLD);
+        fill(150, 150, 150);
+        text(Degrees, 1125, 55);
+        noLoop();
     }
 }
 
@@ -245,3 +273,8 @@ function mousePressed()
     
   
 }
+
+function updateweather(){
+    weatherdat = loadJSON('http://api.openweathermap.org/data/2.5/weather?q=lubbock&units=imperial&APPID=461042a064362a0e8faa93b05482d204');
+}
+

@@ -1,5 +1,8 @@
 ## The Team
-![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/GroupPhotoBlueEyes.JPG)
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/GroupPhoto.JPG)
+
+## The Team (With Nolan)
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/GroupPhotoBlueEyes.jpg)
 
 ### 1. Kevin Torres: Commander and the Leader
 YouTube API, News API

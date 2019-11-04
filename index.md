@@ -17,7 +17,7 @@ Mirror Design, Wi-Fi API, Text API
 ## Sketch 2
 ![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch3.jpg)
 
-[Demo](C:/Users/mobiu/Documents/Projects/JavaScript/MirrorForce/index.html)
+[Demo](https://sapphirelion.github.io/Blank/)
 
 
 You can use the [editor on GitHub](https://github.com/SapphireLion/p1.21/edit/master/index.md) to maintain and preview the content for your website in Markdown files.

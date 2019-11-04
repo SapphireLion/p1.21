@@ -96,7 +96,7 @@ if(bleh == true)
       fill(255,0,0);
       sq2 = square(healthX-30,555,60,20);
       fill(51);
-      text("Health",healthX,590);
+      text("Health",healthX-20,590);
       textFont("georgia");
       h = hour();
       m = minute();
@@ -259,17 +259,18 @@ function stop()
 }
 function mousePressed()
 {
-  if(mouseX>350 && mouseX<420 && mouseY>555 && mouseY<675)
+  if(mouseX>healthX-80 && mouseX<healthX+80 && mouseY>450 && mouseY<650)
   {
     if(health == false)
     {
       health = true;
     }
   }
-  if (mouseX>350 && mouseX<420 && mouseY>555 && mouseY<675)
+  if (mouseX>330 && mouseX<360 && mouseY>380 && mouseY<600)
     {
       health = false;
     }
+    
     
   
 }

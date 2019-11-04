@@ -100,8 +100,8 @@ function draw() {
     scale(-1.0, 1.0);
 if(bleh == true)
     {
-        sergiosDumbRect = rect(900,15,500,300,50);
-        fill(220);
+        fill(220,100);
+        sergiosDumbRect = rect(910,15,290,575,50);
         myDiv.show();
 
 

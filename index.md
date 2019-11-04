@@ -46,7 +46,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](file:///C:/Users/mobiu/Documents/GitHub/Blank/index.html).
+For more details see [GitHub Flavored Markdown](C:/Users/mobiu/Documents/GitHub/Blank/index.html).
 
 ### Jekyll Themes
 

@@ -21,7 +21,6 @@ function setup() {
 }
 
 function draw() {
-background(200);
 image(img, 0, 0);
 tempData= round(weatherdat.main.temp);
 Degrees = tempData + '°';

@@ -46,6 +46,7 @@ function setup() {
     capture.size(600, 325);
     capture.hide();
     button = createButton("On");
+    button.style('border-radius', '8px');
     button.position(1100,600);
     button.mousePressed(start);
 

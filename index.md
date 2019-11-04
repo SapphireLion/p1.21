@@ -8,7 +8,7 @@ YouTube API, News API
 Calendar API, Spotify API
 ### 3. Jacob Finley Crawford: The Toughest Fighter
 Mirror Design, Health API
-### 4. Nolan: The Other Guy
+### 4. Nolan Ford: The Other Guy
 Weather API, Clock API
 ## Sketch 1
 ### Before

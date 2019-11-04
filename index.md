@@ -1,12 +1,14 @@
 ## The Team
-![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/GroupPhoto.JPG)
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/GroupPhotoBlueEyes.JPG)
 
 ### 1. Kevin Torres: Commander and the Leader
-Music API, Twitter API, Login API
+YouTube API, News API
 ### 2. Sergio Ponce: The Joy and the Laughter
-Clock API, Weather API, Health API
+Calendar API, Spotify API
 ### 3. Jacob Finley Crawford: The Toughest Fighter
-Mirror Design, Wi-Fi API, Text API
+Mirror Design, Health API
+### 4. Nolan: The Other Guy
+Weather API, Clock API
 ## Sketch 1
 ### Before
 ![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch2.png)

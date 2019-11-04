@@ -28,6 +28,8 @@ let sq3;
 var newsURL = "https://newsapi.org/v2/top-headlines?country=us&pageSize=5&apiKey=31ac97faff7841a0beec5fcbeae608c9";
 var myPlaylist = ['OdZrFtIGzfU','pqiJ7krbEDM','Oi7WH7_NO9I'];
 let playlistPlayer;
+
+var sergiosDumbRect;
   
 
 var tag = document.createElement('script');   
@@ -44,8 +46,7 @@ function preload()
 function gotData(data)
 {
     myNews=data;
-    //loadJSON("./credentials.JSON",gotDataGoogle);
-
+    //loadJSON("./credentials.JSON",gotDataGoogle)
 
 }
 
@@ -76,6 +77,17 @@ function setup() {
     img = loadImage(IconURL);
     setInterval(updateweather, 40000);
     setInterval(draw, 200);
+
+
+    myDiv=createDiv();
+    myDiv.size(320,195);
+    myDiv.position(0,300);
+    myDiv.attribute('src','https://www.youtube.com/iframe_api');
+    myDiv.id('YTDiv');
+    myDiv.hide();
+
+
+
 }
 
 function draw() {
@@ -88,7 +100,16 @@ function draw() {
     scale(-1.0, 1.0);
 if(bleh == true)
     {
-      
+        sergiosDumbRect = rect(900,15,500,300,50);
+        fill(220);
+        myDiv.show();
+
+
+        playlistPlayer = new YT.Player('YTDiv',{
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
       spotifyPlaylist.show();
       calendar.show();
 
@@ -96,7 +117,8 @@ if(bleh == true)
       fill(255,0,0);
       sq2 = square(healthX-30,555,60,20);
       fill(51);
-      text("Health",healthX-20,590);
+      textSize(12);
+      text("Health",healthX,590);
       textFont("georgia");
       h = hour();
       m = minute();
@@ -144,13 +166,15 @@ if(bleh == true)
     {
       sq3 = square(healthX-10,400,195);
       fill(255,255,255);
-      text("X",healthX-10,412);
-      text("Calories Eaten Today: 2850",healthX-10,430);
-      text("Steps walked Today: 5,285",healthX-10,445);
-      text("sleep last night: 6 hours",healthX-10,460);
-      text("Weekly Calories: 20,500",healthX-10,530);
-      text("Weekly Steps: 37,836",healthX-10,545);
-      text("Weekly Sleep: 41 hours",healthX-10,560);
+      var healthTextPos=healthX+75;
+      textSize(10);
+      text("X",healthX+20,412);
+      text("Calories Eaten Today: 2850",healthTextPos,430);
+      text("Steps walked Today: 5,285",healthTextPos,445);
+      text("Sleep last night: 6 hours",healthTextPos,460);
+      text("Weekly Calories: 20,500",healthTextPos,530);
+      text("Weekly Steps: 37,836",healthTextPos,545);
+      text("Weekly Sleep: 41 hours",healthTextPos,560);
     }
     if(health == false)
     {
@@ -193,24 +217,7 @@ if(bleh == true)
             myAss5.attribute('href',newsURLs[4]);
             myAss5.position(baseX,baseY*5);
             myAss5.size(200,100);
-
-            textSize(20);
-            text('News',0,365,200,450);
-            fill(255);
         }
-
-
-
-        myDiv=createDiv();
-        myDiv.size(320,195);
-        myDiv.position(0,300);
-        myDiv.attribute('src','https://www.youtube.com/iframe_api');
-        myDiv.id('YTDiv');
-        playlistPlayer = new YT.Player('YTDiv',{
-            events: {
-                'onReady': onPlayerReady
-            }
-        });
 
         image(img, 1075, 0);
         tempData= round(weatherdat.main.temp);
@@ -250,7 +257,7 @@ function start()
 }
 function stop()
 {
-  bleh = false
+  bleh = false;
   button = createButton("On");
   button.position(1100,600);
   button.mousePressed(start);
@@ -266,7 +273,7 @@ function mousePressed()
       health = true;
     }
   }
-  if (mouseX>330 && mouseX<360 && mouseY>380 && mouseY<600)
+  if (mouseX>(healthX+10) && mouseX<(healthX+30) && mouseY>380 && mouseY<600)
     {
       health = false;
     }

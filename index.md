@@ -20,6 +20,10 @@ Weather API, Clock API
 ## Sketch 2
 ![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/sketch3.jpg)
 
+## GIF
+![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/p1.21.gif)
+
+### Demo
 [Demo](https://sapphirelion.github.io/Blank/)
 
 

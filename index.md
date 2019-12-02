@@ -24,7 +24,7 @@ Weather API, Clock API
 ![alt text](https://raw.githubusercontent.com/SapphireLion/p1.21/master/p1.21.gif)
 
 ### Demo
-[Demo](https://sapphirelion.github.io/Blank/)
+[Demo](https://sapphirelion.github.io/)
 
 
 You can use the [editor on GitHub](https://github.com/SapphireLion/p1.21/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
